@@ -8,7 +8,7 @@
 // const value="world"
 // // console.log(name)
 // console.log(`${name} ${ value.toUpperCase}`)
-const myname = new String("gokulsivga");
+// const myname = new String("gokulsivga");
 // console.log(myname[3])
 // console.log(myname.__proto__);
 // console.log(myname.length)
@@ -17,5 +17,5 @@ const newn = myname.substring(0, 9);
 console.log(newn);
 function add(a, b) {
   return a - b;
-  
+
 }
