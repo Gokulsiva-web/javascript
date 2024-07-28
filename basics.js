@@ -13,9 +13,19 @@
 // console.log(myname.__proto__);
 // console.log(myname.length)
 // console.log(myname.charAt(2))
-const newn = myname.substring(0, 9);
-console.log(newn);
-function add(a, b) {
-  return a - b;
+// const newn = myname.substring(0, 9);
+// console.log(newn);
+// function add(a, b) {
+//   return a - b;
 
-}
+// }
+let  car="maruthi"
+const racecar="f1"
+console.log(car)
+console.log(racecar)
+  car="maruthii"
+//  racecar="f31"
+ console.log(car)
+console.log(racecar)
+
+
