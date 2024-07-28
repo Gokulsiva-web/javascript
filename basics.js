@@ -27,5 +27,12 @@ console.log(racecar)
 //  racecar="f31"
  console.log(car)
 console.log(racecar)
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+// Calling the function
+greet("Alice"); // Output: Hello, Alice!
+
 
 
