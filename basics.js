@@ -19,20 +19,23 @@
 //   return a - b;
 
 // }
-let  car="maruthi"
-const racecar="f1"
-console.log(car)
-console.log(racecar)
-  car="maruthii"
-//  racecar="f31"
- console.log(car)
-console.log(racecar)
-function greet(name) {
-  console.log("Hello, " + name + "!");
+// let  car="maruthi"
+// const racecar="f1"
+// console.log(car)
+// console.log(racecar)
+//   car="maruthii"
+// //  racecar="f31"
+//  console.log(car)
+// console.log(racecar)
+// function greet(name) {
+//   console.log("Hello, " + name + "!");
+// }
+
+// // Calling the function
+// greet("Alice"); // Output: Hello, Alice!
+if(true)
+{
+  console.log("good night")
 }
-
-// Calling the function
-greet("Alice"); // Output: Hello, Alice!
-
 
 
