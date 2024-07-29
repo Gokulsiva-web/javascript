@@ -33,9 +33,11 @@
 
 // // Calling the function
 // greet("Alice"); // Output: Hello, Alice!
-if(true)
+if(false)
 {
   console.log("good night")
 }
-
+else{
+  console.log("goodmorning")
+}
 
