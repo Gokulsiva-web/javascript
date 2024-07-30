@@ -40,10 +40,21 @@
 // else{
 //   console.log("goodmorning")
 // }
-let value =true;
-while(value)
-{
+// let value =true;
+// while(value)
+// {
 
-  console.log("good Evening")
-value=false;
-}
+//   console.log("good Evening")
+// value=false;
+// }
+
+// let val1=12??10??15
+
+
+// console.log(val1) 
+
+const foo = null ?? null ??15??13;
+console.log(foo);
+
+const baz = 0 ?? 42;
+console.log(baz);
