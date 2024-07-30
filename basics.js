@@ -33,11 +33,17 @@
 
 // // Calling the function
 // greet("Alice"); // Output: Hello, Alice!
-if(false)
+// if(false)
+// {
+//   console.log("good night")
+// }
+// else{
+//   console.log("goodmorning")
+// }
+let value =true;
+while(value)
 {
-  console.log("good night")
-}
-else{
-  console.log("goodmorning")
-}
 
+  console.log("good Evening")
+value=false;
+}
