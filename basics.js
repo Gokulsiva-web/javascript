@@ -53,8 +53,18 @@
 
 // console.log(val1) 
 
-const foo = null ?? null ??15??13;
-console.log(foo);
+// const foo = null ?? null ??15??13;
+// console.log(foo);
 
-const baz = 0 ?? 42;
-console.log(baz);
+// const baz = 0 ?? 42;
+// console.log(baz);
+let a=5
+let b=6
+function add(a,b){
+    num=a+b
+    return num
+}
+let num1=add(a,b)
+console.log(num1)
+let num2=add(a,b)
+console.log(num2)
