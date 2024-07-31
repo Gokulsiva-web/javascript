@@ -64,7 +64,14 @@ function add(a,b){
     num=a+b
     return num
 }
+function sub(a,b){
+    num=a-b
+    return num
+}
 let num1=add(a,b)
 console.log(num1)
 let num2=add(a,b)
 console.log(num2)
+num2=sub(a,b)
+console.log(num2)
+
