@@ -68,8 +68,11 @@ function sub(a,b){
     num=a-b
     return console.log(num)
 }
+function set(){
 let num1=add(a,b)
 let num2=add(a,b)
 num2=sub(a,b)
 
+}
 
+set()
