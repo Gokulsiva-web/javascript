@@ -73,10 +73,16 @@ function div(a,b)
     num=a/b
     return console.log(num)
 }
+function mul(a,b)
+{
+    num=a*b
+    return console.log(num)
+}
 function set(){
 let num1=add(a,b)
 let num2=sub(a,b)
 let num3=div(a,b)
+let num4=mul(a,b)
 }
 
 set()
