@@ -89,11 +89,13 @@
 // set()
 let i=0
 let j=5
+let string=""
 for (j=0;j<=5;j++)
 {
     for(i=0;i<=j;i++)
     {
-        console.log("*")
+        string += '*';
+        console.log(string)
     }
-    console.log()
+    // console.log()
 }
