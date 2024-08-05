@@ -58,31 +58,42 @@
 
 // const baz = 0 ?? 42;
 // console.log(baz);
-let a=5
-let b=6
-function add(a,b){
-    num=a+b
-    return console.log(num)
-}
-function sub(a,b){
-    num=a-b
-    return console.log(num)
-}   
-function div(a,b)
-{
-    num=a/b
-    return console.log(num)
-}
-function mul(a,b)
-{
-    num=a*b
-    return console.log(num)
-}
-function set(){
-let num1=add(a,b)
-let num2=sub(a,b)
-let num3=div(a,b)
-let num4=mul(a,b)
-}
+// let a=5
+// let b=6
+// function add(a,b){
+//     num=a+b
+//     return console.log(num)
+// }
+// function sub(a,b){
+//     num=a-b
+//     return console.log(num)
+// }   
+// function div(a,b)
+// {
+//     num=a/b
+//     return console.log(num)
+// }
+// function mul(a,b)
+// {
+//     num=a*b
+//     return console.log(num)
+// }
 
-set()
+// function set(){
+// let num1=add(a,b)
+// let num2=sub(a,b)
+// let num3=div(a,b)
+// let num4=mul(a,b)
+// }
+
+// set()
+let i=0
+let j=5
+for (j=0;j<=5;j++)
+{
+    for(i=0;i<=j;i++)
+    {
+        console.log("*")
+    }
+    console.log()
+}
