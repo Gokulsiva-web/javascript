@@ -98,4 +98,9 @@ for (j=0;j<=5;j++)
         console.log(string)
     }
     // console.log()
+    for(i=5;i<=j;i--)
+        {
+            string += '*';
+            console.log(string)
+        }
 }
