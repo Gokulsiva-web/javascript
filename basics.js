@@ -87,18 +87,18 @@
 // }
 
 // set()
-let i=0
-let j=5
+// let i=0
+// let j=5
 let string=""
-for (j=0;j<=5;j++)
+for (let j=0;j<=5;j++)
 {
-    for(i=0;i<=j;i++)
+    for(let i=0;i<=j;i++)
     {
         string += '*';
         console.log(string)
     }
     // console.log()
-    for(i=5;i<=j;i--)
+    for(let i=5;i<=0;i--)
         {
             string += '*';
             console.log(string)
