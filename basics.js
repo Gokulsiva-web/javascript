@@ -89,18 +89,35 @@
 // set()
 // let i=0
 // let j=5
-let string=""
-for (let j=0;j<=5;j++)
-{
-    for(let i=0;i<=j;i++)
+// let string=""
+// for (let j=0;j<=5;j++)
+// {
+//     for(let i=0;i<=j;i++)
+//     {
+//         string += '*';
+//         console.log(string)
+//     }
+//     // console.log()
+//     for(let i=5;i<=0;i--)
+//         {
+//             string += '*';
+//             console.log(string)
+//         }
+// }
+for (let i = 1; i <=6; i++) {
+    for(let j=i;j<=6;j++)
     {
-        string += '*';
-        console.log(string)
+        
+        console.log("  ");
     }
-    // console.log()
-    for(let i=5;i<=0;i--)
-        {
-            string += '*';
-            console.log(string)
-        }
-}
+    for(let j=1;j<=i;j++)
+    {
+        console.log("* ");
+    }
+    for(let j=1;j<i;j++)
+    {
+        console.log("* ");
+    }
+    console.log();
+       
+   }
