@@ -104,20 +104,15 @@
 //             console.log(string)
 //         }
 // }
-for (let i = 1; i <=6; i++) {
-    for(let j=i;j<=6;j++)
-    {
-        
-        console.log("  ");
+for (let i = 1; i <= 6; i++) {
+    for (let j = i; j <= 6; j++) {
+        process.stdout.write("  ");
     }
-    for(let j=1;j<=i;j++)
-    {
-        console.log("* ");
+    for (let j = 1; j <= i; j++) {
+        process.stdout.write("* ");
     }
-    for(let j=1;j<i;j++)
-    {
-        console.log("* ");
+    for (let j = 1; j < i; j++) {
+        process.stdout.write("* ");
     }
     console.log();
-       
-   }
+}
