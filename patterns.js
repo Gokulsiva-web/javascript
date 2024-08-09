@@ -42,10 +42,23 @@
 
 //     console.log(output); // Print the current row
 // }
+// let p = 'A';
+// let n = 5; // Number of rows
+
+// for (let i = 1; i <= n; i++) {
+//     let output = '';
+
+//     for (let j = 1; j <= i; j++) {
+//         output += p + "\t";
+//         p = String.fromCharCode(p.charCodeAt(0) + 1);
+//     }
+
+//     console.log(output);
+// }
 let p = 'A';
 let n = 5; // Number of rows
 
-for (let i = 1; i <= n; i++) {
+for (let i = n; i >= 1; i--) {
     let output = '';
 
     for (let j = 1; j <= i; j++) {
