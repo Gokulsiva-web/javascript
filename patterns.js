@@ -23,22 +23,35 @@
 // 		}
 		
 
+// let p = 'A';
+// let n = 5; // Number of rows
+
+// for (let i = 1; i <= n; i++) {
+//     let output = '';
+
+//     // Add spaces for centering the pyramid
+//     for (let j = 1; j <= n - i; j++) {
+//         output += ' \t'; // Add tabs to create spaces
+//     }
+
+//     // Add the letters for the current row
+//     for (let k = 1; k <= i; k++) {
+//         output += p + "\t";
+//         p = String.fromCharCode(p.charCodeAt(0) + 1); // Move to the next character
+//     }
+
+//     console.log(output); // Print the current row
+// }
 let p = 'A';
 let n = 5; // Number of rows
 
 for (let i = 1; i <= n; i++) {
     let output = '';
 
-    // Add spaces for centering the pyramid
-    for (let j = 1; j <= n - i; j++) {
-        output += ' \t'; // Add tabs to create spaces
-    }
-
-    // Add the letters for the current row
-    for (let k = 1; k <= i; k++) {
+    for (let j = 1; j <= i; j++) {
         output += p + "\t";
-        p = String.fromCharCode(p.charCodeAt(0) + 1); // Move to the next character
+        p = String.fromCharCode(p.charCodeAt(0) + 1);
     }
 
-    console.log(output); // Print the current row
+    console.log(output);
 }
