@@ -70,21 +70,32 @@
 // }
 
 
-let rem, reverse = 0, copy, i, j;
+// let rem, reverse = 0, copy, i, j;
 
-for (i = 153; i <= 999; i++) {
-    copy = i;
-    j = i;
-    while (j != 0) {
-        rem = j % 10;
-        reverse += rem * rem * rem;
-        j = Math.floor(j / 10);
+// for (i = 153; i <= 999; i++) {
+//     copy = i;
+//     j = i;
+//     while (j != 0) {
+//         rem = j % 10;
+//         reverse += rem * rem * rem;
+//         j = Math.floor(j / 10);
+//     }
+
+//     if (copy == reverse)
+//         console.log("Armstrong: " + i);
+
+//     reverse = 0;  // Reset reverse for the next iteration
+// }
+
+let num = 1;
+
+for (let i = 0; i <= 10; i++) {
+    for (let j = 1; j <= 10; j++) {
+        console.log(num + " x " + j + " = " + (num * j));
     }
-
-    if (copy == reverse)
-        console.log("Armstrong: " + i);
-
-    reverse = 0;  // Reset reverse for the next iteration
+    console.log();  // Print a blank line between tables
+    num++;
 }
+
 
 	
