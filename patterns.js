@@ -53,18 +53,38 @@
 //         p = String.fromCharCode(p.charCodeAt(0) + 1);
 //     }
 
+    // console.log(output);
+// }
+// let p = 'A';
+// let n = 5; // Number of rows
+
+// for (let i = n; i >= 1; i--) {
+//     let output = '';
+
+//     for (let j = 1; j <= i; j++) {
+//         output += p + "\t";
+//         p = String.fromCharCode(p.charCodeAt(0) + 1);
+//     }
+
 //     console.log(output);
 // }
-let p = 'A';
-let n = 5; // Number of rows
 
-for (let i = n; i >= 1; i--) {
-    let output = '';
 
-    for (let j = 1; j <= i; j++) {
-        output += p + "\t";
-        p = String.fromCharCode(p.charCodeAt(0) + 1);
+let rem, reverse = 0, copy, i, j;
+
+for (i = 153; i <= 999; i++) {
+    copy = i;
+    j = i;
+    while (j != 0) {
+        rem = j % 10;
+        reverse += rem * rem * rem;
+        j = Math.floor(j / 10);
     }
 
-    console.log(output);
+    if (copy == reverse)
+        console.log("Armstrong: " + i);
+
+    reverse = 0;  // Reset reverse for the next iteration
 }
+
+	
