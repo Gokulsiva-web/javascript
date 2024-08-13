@@ -87,15 +87,28 @@
 //     reverse = 0;  // Reset reverse for the next iteration
 // }
 
-let num = 1;
+// let num = 1;
 
-for (let i = 0; i <= 10; i++) {
-    for (let j = 1; j <= 10; j++) {
-        console.log(num + " x " + j + " = " + (num * j));
+// for (let i = 0; i <= 10; i++) {
+//     for (let j = 1; j <= 10; j++) {
+//         console.log(num + " x " + j + " = " + (num * j));
+//     }
+//     console.log();  // Print a blank line between tables
+//     num++;
+// }
+
+function checkEvenOdd(number) {
+    if (number % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
     }
-    console.log();  // Print a blank line between tables
-    num++;
 }
+
+// Test the function
+console.log("4 is:", checkEvenOdd(4));  // Even
+console.log("7 is:", checkEvenOdd(7));  // Odd
+
 
 
 	
