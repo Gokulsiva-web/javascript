@@ -97,17 +97,30 @@
 //     num++;
 // }
 
-function checkEvenOdd(number) {
-    if (number % 2 === 0) {
-        return "Even";
-    } else {
-        return "Odd";
+// function checkEvenOdd(number) {
+//     if (number % 2 === 0) {
+//         return "Even";
+//     } else {
+//         return "Odd";
+//     }
+// }
+
+// // Test the function
+// console.log("4 is:", checkEvenOdd(4));  // Even
+// console.log("7 is:", checkEvenOdd(7));  // Odd
+
+function sumArray(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
     }
+    return sum;
 }
 
 // Test the function
-console.log("4 is:", checkEvenOdd(4));  // Even
-console.log("7 is:", checkEvenOdd(7));  // Odd
+let numbersArray = [1, 2, 3, 4, 5];
+console.log("Sum of array:", sumArray(numbersArray));  // 15
+
 
 
 
