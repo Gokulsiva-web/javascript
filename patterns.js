@@ -121,17 +121,30 @@
 // let numbersArray = [1, 2, 3, 4, 5];
 // console.log("Sum of array:", sumArray(numbersArray));  // 15
 
-function isPrime(num) {
-    if (num <= 1) return false;
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) return false;
+// function isPrime(num) {
+//     if (num <= 1) return false;
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) return false;
+//     }
+//     return true;
+// }
+
+// for (let i = 1; i <= 100; i++) {
+//     if (isPrime(i)) console.log(i);
+// }
+
+function fibonacci(n) {
+    let a = 0, b = 1, next;
+    for (let i = 1; i <= n; i++) {
+        console.log(a);
+        next = a + b;
+        a = b;
+        b = next;
     }
-    return true;
 }
 
-for (let i = 1; i <= 100; i++) {
-    if (isPrime(i)) console.log(i);
-}
+fibonacci(10); // Output: first 10 numbers in the Fibonacci sequence
+
 
 
 
