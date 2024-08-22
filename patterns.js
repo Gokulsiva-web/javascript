@@ -133,18 +133,28 @@
 //     if (isPrime(i)) console.log(i);
 // }
 
-function fibonacci(n) {
-    let a = 0, b = 1, next;
-    for (let i = 1; i <= n; i++) {
-        console.log(a);
-        next = a + b;
-        a = b;
-        b = next;
+// function fibonacci(n) {
+//     let a = 0, b = 1, next;
+//     for (let i = 1; i <= n; i++) {
+//         console.log(a);
+//         next = a + b;
+//         a = b;
+//         b = next;
+//     }
+// }
+
+// fibonacci(10); // Output: first 10 numbers in the Fibonacci sequence
+
+let person = {
+    name: "Alice",
+    age: 30,
+    introduce: function() {
+        return `Hi, my name is ${this.name} and I am ${this.age} years old.`;
     }
-}
+};
 
-fibonacci(10); // Output: first 10 numbers in the Fibonacci sequence
-
+// Use the method
+console.log(person.introduce());
 
 
 
