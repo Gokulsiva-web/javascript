@@ -145,16 +145,23 @@
 
 // fibonacci(10); // Output: first 10 numbers in the Fibonacci sequence
 
-let person = {
-    name: "Alice",
-    age: 30,
-    introduce: function() {
-        return `Hi, my name is ${this.name} and I am ${this.age} years old.`;
-    }
-};
+// let person = {
+//     name: "Alice",
+//     age: 30,
+//     introduce: function() {
+//         return `Hi, my name is ${this.name} and I am ${this.age} years old.`;
+//     }
+// };
 
-// Use the method
-console.log(person.introduce());
+// // Use the method
+// console.log(person.introduce());
+
+let numbers = [1, 6, 3, 8, 2, 10, 4];
+
+// Filter and sort
+let filteredAndSorted = numbers.filter(num => num <= 5).sort((a, b) => b - a);
+
+console.log("Filtered and Sorted:", filteredAndSorted);
 
 
 
