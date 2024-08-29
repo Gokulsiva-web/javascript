@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #timerDisplay {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="timerDisplay">00:00</div>
+        <input type="number" id="secondsInput" placeholder="Enter seconds">
+        <button onclick="startTimer()">Start Timer</button>
+    </div>
+
+    <script>
+        let countdown;
+        function startTimer() {
+            let seconds = parseInt(document.getElementById("secondsInput").value);
+            if (isNaN(seconds) || seconds <= 0) {
+                alert("Please enter a valid number of seconds.");
+                return;
+            }
+
+            clearInterval(countdown);
+            const timerDisplay = document.getElementById("timerDisplay");
+            timerDisplay.textContent = formatTime(seconds);
+
+            countdown = setInterval(() => {
+                seconds--;
+                timerDisplay.textContent = formatTime(seconds);
+
+                if (seconds <= 0) {
+                    clearInterval(countdown);
+                    alert("Time's up!");
+                }
+            }, 1000);
+        }
+
+        function formatTime(seconds) {
+            let minutes = Math.floor(seconds / 60);
+            let remainingSeconds = seconds % 60;
+            return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+        }
+    </script>
+</body>
+</html>
