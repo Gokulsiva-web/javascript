@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Example</title>
+    <style>
+        #output {
+            color: green;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <p>Please enter your name below:</p>
+
+    <!-- Input field to take user input -->
+    <input type="text" id="userInput" placeholder="Type your name here">
+
+    <!-- Button to trigger the JavaScript function -->
+    <button onclick="displayInput()">Submit</button>
+
+    <!-- Paragraph to display the output -->
+    <p id="output"></p>
+
+    <!-- JavaScript to handle user input and display output -->
+    <script>
+        function displayInput() {
+            // Get the value from the input field
+            var userInput = document.getElementById("userInput").value;
+            
+            // Display the input value in the paragraph with id="output"
+            document.getElementById("output").innerHTML = "Hello, " + userInput + "!";
+        }
+    </script>
+</body>
+</html>
