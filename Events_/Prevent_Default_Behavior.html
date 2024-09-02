@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prevent Default Behavior</title>
+</head>
+<body>
+  <form id="myForm">
+    <input type="text" placeholder="Enter something" />
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    // Select the form and message elements
+    const form = document.getElementById('myForm');
+    const message = document.getElementById('message');
+
+    // Add a submit event listener to the form
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+      message.textContent = 'Form submission prevented.';
+    });
+  </script>
+</body>
+</html>
