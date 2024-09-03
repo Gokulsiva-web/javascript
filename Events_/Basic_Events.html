@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Types Demo</title>
+  <style>
+    /* CSS styles for the div and form */
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      background-color: lightgrey;
+      margin-bottom: 20px;
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #formData {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Mouse Event -->
+  <div id="colorBox">Hover over me!</div>
+
+  <!-- Keyboard Event -->
+  <p>Press any key: <span id="keyPressed"></span></p>
+
+  <!-- Form Event -->
+  <form id="myForm">
+    <input type="text" name="username" placeholder="Enter your name" required />
+    <input type="email" name="email" placeholder="Enter your email" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Display form data -->
+  <div id="formData"></div>
+
+  <script>
+    // Mouse Event: Change color on mouse enter and leave
+    const colorBox = document.getElementById('colorBox');
+    colorBox.addEventListener('mouseenter', () => {
+      colorBox.style.backgroundColor = 'lightblue';
+    });
+    colorBox.addEventListener('mouseleave', () => {
+      colorBox.style.backgroundColor = 'lightgrey';
+    });
+
+    // Keyboard Event: Display the key pressed by the user
+    document.addEventListener('keydown', (event) => {
+      document.getElementById('keyPressed').textContent = event.key;
+    });
+
+    // Form Event: Prevent form submission and display form data
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent form submission
+
+      // Retrieve and display form data
+      const formData = new FormData(form);
+      let output = 'Form Data:<br>';
+      for (let [key, value] of formData.entries()) {
+        output += `${key}: ${value}<br>`;
+      }
+      document.getElementById('formData').innerHTML = output;
+    });
+
+    // Window Event: Alert new dimensions on resize
+    window.addEventListener('resize', () => {
+      alert(`New window dimensions: ${window.innerWidth}x${window.innerHeight}`);
+    });
+  </script>
+</body>
+</html>
