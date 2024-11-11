@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Interval</h1>
     <button id="start">Start</button>
-    <button id="stop">Stop</button> 
-</body>
-<script>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
     let intervalId; // Declare it in the outer scope
 
     document.querySelector("#start").addEventListener("click", function () {
-        if (!intervalId) { // Check if the interval is already running
-            intervalId = setInterval(start, 1000);
-            console.log("Start");
-        }
+      if (!intervalId) {
+        // Check if the interval is already running
+        intervalId = setInterval(start, 1000);
+        console.log("Start");
+      }
     });
 
     const start = function () {
-        console.log("Today's date", Date.now());
+      console.log("Today's date", Date.now());
     };
 
     document.querySelector("#stop").addEventListener("click", function () {
-        if (intervalId) {
-            clearInterval(intervalId);
-            intervalId = null; // Reset the intervalId
-            console.log("Stop");
-        }
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null; // Reset the intervalId
+        console.log("Stop");
+      }
     });
-</script>
+  </script>
 </html>
